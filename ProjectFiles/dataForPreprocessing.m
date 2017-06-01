@@ -3,10 +3,6 @@ function [TR, sliceOrder] = dataForPreprocessing(dicomfilename)
 % 
 % input: path to Siemens DICOM file
 % output: TR (in seconds), slice order
-%
-% Note: in SPM, slice ordering is assumed to be from foot to head
-% Check that info.PatientPosition = 'HFS' (?)
-
 
 % Read DICOM header
 info = dicominfo(dicomfilename);
